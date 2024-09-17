@@ -1,6 +1,6 @@
 .wrapper {
     width: 420px;
-    height: 590px; /* Adjust height based on content */
+ 
     background-color: #8ac3e0; /* Light Blue background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -59,3 +59,13 @@
 .wrapper button:hover {
     background-color: #00008B; /* Dark Blue on hover */
 }
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+      width: 90%;
+      height: auto; /* Adjust height based on content */
+    }
+  }
+  

@@ -15,8 +15,20 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #fff;
- 
-}
+  overflow: auto; 
+  min-height: 100vh; 
+
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling if needed */
+  }
+  
+  .app-container {
+    overflow: auto; 
+    min-height: 100vh; /* Allow scrolling if content exceeds viewport */
+  }
+  
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
