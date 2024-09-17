@@ -1,0 +1,61 @@
+.wrapper {
+    width: 420px;
+    height: 590px; /* Adjust height based on content */
+    background-color: #8ac3e0; /* Light Blue background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    box-sizing: border-box; /* Ensures padding does not affect width/height */
+    position: relative;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space between input boxes */
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Match input box corners */
+    box-sizing: border-box; /* Ensure padding does not affect width/height */
+}
+
+.wrapper button {
+    width: 100%;
+    height: 50px;
+    background-color: #193178; /* Royal Blue */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth color transition */
+    margin-top: 100px; /* Space above the button */
+    position: relative; /* Ensure it respects the z-index */
+    z-index: 10; /* Ensure button is on top */
+}
+
+.wrapper button:hover {
+    background-color: #00008B; /* Dark Blue on hover */
+}
