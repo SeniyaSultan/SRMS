@@ -2,18 +2,14 @@ import React, { useRef, useState } from 'react';
 import profileImage from './profile2.png';
 import './Profile.css';
 
-
-
-const Profile = () => {
+const ProfileStudent = () => {
   const [uploadedImage, setUploadedImage] = useState(profileImage);
   const inputRef = useRef(null);
 
-  // Handle image click to trigger file input
   const handleImageClick = () => {
     inputRef.current.click();
   };
 
-  // Handle image file selection
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -30,12 +26,12 @@ const Profile = () => {
       <div
         className="image-container"
         onClick={handleImageClick}
-        style={{ cursor: 'pointer' }}
       >
         <img src={uploadedImage} alt="Profile" className="profile-picture" />
       </div>
+  
       <label className="upload-label">Upload Image</label>
-      <label className="upload-label" style={{  fontWeight: 'bold', fontSize: '25px', color: '#3498db',  marginBottom: '20px'}}>Admin Profile page</label>
+      <label className="upload-label" style={{  fontWeight: 'bold', fontSize: '25px', color: '#3498db',  marginBottom: '20px'}}>Student Profile page</label>
       <input
         type="file"
         ref={inputRef}
@@ -44,7 +40,6 @@ const Profile = () => {
         accept="image/*"
       />
       <form className="profile-form">
-      
         <h2 className="profile-title">Manage Profile</h2>
         <div className="form-group">
           <label>Email:</label>
@@ -64,4 +59,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfileStudent;

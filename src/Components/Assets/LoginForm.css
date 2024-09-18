@@ -1,13 +1,16 @@
 .wrapper {
-    width: 420px;
- 
-    background-color: #8ac3e0; /* Light Blue background */
+    width: 100%; /* Ensure it takes full width */
+    max-width: 420px; /* Adjust width as needed */
+    background-color: #8ac3e0; /* Light blue background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 20px; /* Inner spacing */
-    box-sizing: border-box; /* Ensures padding does not affect width/height */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
     position: relative;
+    margin-bottom: 20px; /* Add some margin at the bottom */
+   /* overflow: visible;  Prevent inner scroll */
 }
+
 
 .wrapper h1 {
     font-size: 36px;
